@@ -179,7 +179,7 @@ public class GameApp {
             }
         });
         controls.add(play);
-        ImageIcon mymenu = new ImageIcon("Mymenun.png");
+        ImageIcon mymenu = new ImageIcon("MyChessGame\\Mymenun.png");
         JOptionPane.showMessageDialog(null,"","Welcome to SketchChess",JOptionPane.INFORMATION_MESSAGE,mymenu);
 
         int withbot=-1;
@@ -325,7 +325,7 @@ class ChessEngine extends Canvas {
         int pxPerHor = getWidth() / 8;
 
         Image chessPiecesImage;
-        chessPiecesImage=new ImageIcon("Nblackbishop.png").getImage();
+        chessPiecesImage=new ImageIcon("MyChessGame\\Nblackbishop.png").getImage();
         for (int i = 0; i < 8; i++) {
             int lenAtIdx = 8;
             int pxPerVer = getHeight() / lenAtIdx;
@@ -354,52 +354,52 @@ class ChessEngine extends Canvas {
                     g.setFont(new Font("TimesRoman", Font.PLAIN, Math.min(pxPerHor, pxPerVer)));
                     switch (board.get(i,j).getSymbol()) {
                         case "♕":
-                            chessPiecesImage=new ImageIcon("Nwhitequeen.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nwhitequeen.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♔":
-                            chessPiecesImage=new ImageIcon("Nwhiteking.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nwhiteking.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♘":
-                            chessPiecesImage=new ImageIcon("Nwgg.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nwgg.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♗":
-                            chessPiecesImage=new ImageIcon("Nwhitebishopp.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nwhitebishopp.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♙":
-                            chessPiecesImage=new ImageIcon("Nwhitepawn.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nwhitepawn.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♖":
-                            chessPiecesImage=new ImageIcon("Nwhiterookn.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nwhiterookn.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
 
                         case "♛":
-                            chessPiecesImage=new ImageIcon("Nblackqueen.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nblackqueen.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♚":
-                            chessPiecesImage=new ImageIcon("Nblackking.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nblackking.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♞":
-                            chessPiecesImage=new ImageIcon("Nblacknight.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nblacknight.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♝":
-                            chessPiecesImage=new ImageIcon("Nblackbishop.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nblackbishop.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♟":
-                            chessPiecesImage=new ImageIcon("Nblackpawngnew.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\Nblackpawngnew.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                         case "♜":
-                            chessPiecesImage=new ImageIcon("NNblackrook.png").getImage();
+                            chessPiecesImage=new ImageIcon("MyChessGame\\NNblackrook.png").getImage();
                             g.drawImage(chessPiecesImage,i * pxPerHor + 7, j * pxPerVer + pxPerVer-75,this);
                             break;
                     }
